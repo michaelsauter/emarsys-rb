@@ -23,7 +23,7 @@ module Emarsys
       end
 
       if client.read_timeout
-        args.merge!(read_timeout: client.read_timeout)
+        args.merge!(timeout: client.read_timeout)
       end
 
       if [:post, :put].include?(http_verb)
